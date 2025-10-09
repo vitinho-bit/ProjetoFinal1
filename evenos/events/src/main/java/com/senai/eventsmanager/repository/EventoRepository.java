@@ -1,6 +1,5 @@
 package com.senai.eventsmanager.repository;
 
-import com.senai.eventsmanager.dto.EventoDTO;
 import com.senai.eventsmanager.entity.Evento;
 import com.senai.eventsmanager.enums.EventoEnum;
 

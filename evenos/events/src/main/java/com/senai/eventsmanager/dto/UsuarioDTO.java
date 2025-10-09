@@ -27,6 +27,7 @@ public class UsuarioDTO {
     @Email (message = "Email inválido")
     private String email;
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @NotBlank(message = "A senha deve ser preenchido")
     @DeveTerNumeros
     private String senha;

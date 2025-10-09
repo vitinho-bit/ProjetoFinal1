@@ -41,7 +41,7 @@ public class Usuario {
     @Column(nullable = false, unique = true, length = 15)
     private String cpf;
 
-    @Column(nullable = false, unique = true, length = 15)
+    @Column(nullable = false , length = 15)
     private String telefone;
 
     @Enumerated(EnumType.ORDINAL)
