@@ -14,6 +14,8 @@ import java.util.UUID;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import com.senai.eventsmanager.enums.UsuarioEnum;
 
@@ -21,9 +23,9 @@ import com.senai.eventsmanager.enums.UsuarioEnum;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@SuppressWarnings("unused")
 @Entity
 @Table(name = "usuario")
+@EntityListeners(AuditingEntityListener.class)
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

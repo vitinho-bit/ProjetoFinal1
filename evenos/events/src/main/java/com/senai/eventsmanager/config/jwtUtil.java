@@ -17,7 +17,7 @@ import io.jsonwebtoken.security.Keys;
  * CHAVE CRIPTOGRAFICA UTILIZADA PARA ASSINAR E VERFIFICAR TOKEN
  * USANDO O ALGORITIMO CHAMADO DE HMAC - SHA
  */
-public class jwtUtil {
+public class JwtUtil {
 
     private final String SEGREDO = "umaChaveSuperSecretaDeNoMinimo32Caracteres!";
 
